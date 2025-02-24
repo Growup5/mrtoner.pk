@@ -2,9 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaPrint, FaLeaf, FaTruck } from "react-icons/fa";
 import backgroundImage from "../images/15381.jpg";
+import PhotocopierList from "../Components/product/product";
 
 const Home = () => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -55,6 +57,8 @@ const Home = () => {
         ))}
       </div>
     </motion.div>
+    <PhotocopierList/>
+    </>
   );
 };
 

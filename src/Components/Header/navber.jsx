@@ -50,7 +50,7 @@ const Navbar = () => {
                                                 </svg>
                                                 <div>
                                                     <p className="text-lg">Printing</p>
-                                                    <p className="text-sm text-gray-400">Professional printing services for your needs</p>
+                                                    <p className="text-sm text-gray-400">We specialize in selling professional printers, not providing printing services</p>
                                                 </div>
                                             </Link>
                                         </li>
