@@ -36,12 +36,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/mrtoner.pk/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/services/printing" element={<Printing />} />
-        <Route path="/services/toner-refill" element={<Toner />} />
-        <Route path="/services/repair" element={<Repair />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/mrtoner.pk/products" element={<Products />} />
+        <Route path="/mrtoner.pk/services/printing" element={<Printing />} />
+        <Route path="/mrtoner.pk/services/toner-refill" element={<Toner />} />
+        <Route path="/mrtoner.pk/services/repair" element={<Repair />} />
+        <Route path="/mrtoner.pk/contact" element={<Contact />} />
+        <Route path="/mrtoner.pk/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

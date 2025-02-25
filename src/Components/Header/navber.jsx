@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className="hidden lg:flex lg:items-center space-x-6">
                     <ul className="flex flex-row lg:space-x-6">
                         <li><NavLink to="/mrtoner.pk/" className="block py-2 hover:text-gray-400">Home</NavLink></li>
-                        <li><NavLink to="/products" className="block py-2 hover:text-gray-400">Products</NavLink></li>
+                        <li><NavLink to="/mrtoner.pk/products" className="block py-2 hover:text-gray-400">Products</NavLink></li>
 
                         <li
                             className="relative"
@@ -44,7 +44,7 @@ const Navbar = () => {
                                         className="absolute top-full left-0 bg-gray-900 mt-2 py-3 w-80 rounded-lg shadow-lg z-50"
                                     >
                                         <li className="px-4 py-3 hover:bg-gray-700 transition duration-300">
-                                            <Link to="/services/printing" className="flex items-center space-x-3">
+                                            <Link to="/mrtoner.pk/services/printing" className="flex items-center space-x-3">
                                                 <svg className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 9V3H4v18h16V3h-2v6m-8 3h4m-2-2V9h-4v3h2v-2z" />
                                                 </svg>
@@ -56,7 +56,7 @@ const Navbar = () => {
                                         </li>
 
                                         <li className="px-4 py-3 hover:bg-gray-700 transition duration-300">
-                                            <Link to="/services/toner-refill" className="flex items-center space-x-3">
+                                            <Link to="/mrtoner.pk/services/toner-refill" className="flex items-center space-x-3">
                                                 <svg className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2v12m0 0v8m0-8H6m6 0h6M3 9l9 9L21 9" />
                                                 </svg>
@@ -68,7 +68,7 @@ const Navbar = () => {
                                         </li>
 
                                         <li className="px-4 py-3 hover:bg-gray-700 transition duration-300">
-                                            <Link to="/services/repair" className="flex items-center space-x-3">
+                                            <Link to="/mrtoner.pk/services/repair" className="flex items-center space-x-3">
                                                 <svg className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 10l2-2m0 0l4-4m-4 4h-3l1 5h1l5 1h-7l1 1l4-6z" />
                                                 </svg>
@@ -83,8 +83,8 @@ const Navbar = () => {
                             </AnimatePresence>
                         </li>
 
-                        <li><NavLink to="/contact" className="block py-2 hover:text-gray-400">Contact</NavLink></li>
-                        <li><NavLink to="/about" className="block py-2 hover:text-gray-400">About Us</NavLink></li>
+                        <li><NavLink to="/mrtoner.pk/contact" className="block py-2 hover:text-gray-400">Contact</NavLink></li>
+                        <li><NavLink to="/mrtoner.pk/about" className="block py-2 hover:text-gray-400">About Us</NavLink></li>
                     </ul>
 
                     <div className="ml-6"><SearchComponent /></div>

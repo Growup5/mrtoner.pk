@@ -32,9 +32,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Contact Info</h3>
             <ul className="space-y-3">
-              <li>📍 123 Printer Street, Tech City</li>
-              <li>✉ info@printerstore.com</li>
-              <li>📞 +1 234 567 890</li>
+              <li>Lahore, Pakistan</li>
+              <li>✉ mrtoner@gmail.com </li>
+              <li>📞 +92 33-048-9839</li>
+              <li>📞 +92 300-460-1659</li>
             </ul>
           </div>
 
