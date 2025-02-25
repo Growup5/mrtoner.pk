@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { FaPrint, FaLeaf, FaTruck } from "react-icons/fa";
 import backgroundImage from "../images/15381.jpg";
 import PhotocopierList from "../Components/product/product";
+import ProductComparison  from "../Components/Comparison/ProductComparison";
+import Blog from "../Components/Blog/Blog";
+import Newsletter from "../Components/Newsletter/Newsletter"; 
+import PrinterCustomizer from "../Components/Comparison/PrinterCustomizer";
+import PricingCalculator from "../Components/Comparison/PricingCalculator";
+import PrinterConfigurator from "../Components/Comparison/PrinterConfigurator";
 
 const Home = () => {
   return (
@@ -58,6 +64,14 @@ const Home = () => {
       </div>
     </motion.div>
     <PhotocopierList/>
+    <ProductComparison />
+    <Blog/>
+    <Newsletter />
+    <PrinterCustomizer />
+    <PricingCalculator />
+    <PrinterConfigurator/>
+
+
     </>
   );
 };
