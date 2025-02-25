@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import TradeInProgram from '../Inventory/TradeInProgram';
 const PrinterSalesPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -30,6 +30,7 @@ const PrinterSalesPage = () => {
   }, [slides.length]);
 
   return (
+    <>
     <div className="bg-gray-100 min-h-screen">
       {/* Slider Banner */}
       <div className="relative w-full h-96 overflow-hidden">
@@ -95,13 +96,9 @@ const PrinterSalesPage = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Professional Printers. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
+    </div> 
+    <TradeInProgram/>
+    </>
   );
 };
 

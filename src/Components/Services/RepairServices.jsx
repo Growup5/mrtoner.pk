@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import RepairBooking from '../Inventory/RepairBooking';
 const RepairServices = () => {
   const settings = {
     dots: true,
@@ -15,6 +15,7 @@ const RepairServices = () => {
   };
 
   return (
+    <>
     <div className="bg-gray-100 min-h-screen">
       <div className="w-full">
         <Slider {...settings}>
@@ -79,6 +80,9 @@ const RepairServices = () => {
         </div>
       </div>
     </div>
+    <RepairBooking/>
+
+    </>
   );
 };
 

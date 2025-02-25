@@ -9,9 +9,7 @@ import Newsletter from "../Components/Newsletter/Newsletter";
 import PrinterCustomizer from "../Components/Comparison/PrinterCustomizer";
 import PricingCalculator from "../Components/Comparison/PricingCalculator";
 import PrinterConfigurator from "../Components/Comparison/PrinterConfigurator";
-
 const Home = () => {
-  // Variants for sliding and fading animations
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -160,6 +158,7 @@ const Home = () => {
       >
         <PrinterConfigurator />
       </motion.div>
+
     </>
   );
 };
