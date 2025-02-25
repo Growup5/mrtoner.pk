@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 <div className="hidden lg:flex lg:items-center space-x-6">
                     <ul className="flex flex-row lg:space-x-6">
-                        <li><NavLink to="/" className="block py-2 hover:text-gray-400">Home</NavLink></li>
+                        <li><NavLink to="/mrtoner.pk/" className="block py-2 hover:text-gray-400">Home</NavLink></li>
                         <li><NavLink to="/products" className="block py-2 hover:text-gray-400">Products</NavLink></li>
 
                         <li
