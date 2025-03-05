@@ -15,30 +15,28 @@ const photocopiers = [
 const PhotocopierCard = ({ name, description, image }) => {
   return (
     <motion.div 
-      className="bg-white shadow-lg p-6 rounded-xl text-center hover:shadow-2xl transition-all duration-300 relative"
+      className="bg-white shadow-lg p-6 rounded-xl text-center transition-all duration-300 relative overflow-hidden group"
       whileHover={{ scale: 1.05 }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Printer className="w-10 h-10 mx-auto text-gray-500 mb-2" />
-      <div className="relative overflow-hidden">
+      <div className="relative w-full h-44 overflow-hidden rounded-lg">
         <motion.img 
           src={image} 
           alt={name} 
-          className="w-full h-40 object-contain mb-4 rounded-lg"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
+          className="w-50 h-50 object-cover mx-auto group-hover:scale-110 transition-transform duration-300 rounded-3xl"
+          />
       </div>
-      <h3 className="text-lg font-bold">{name}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
-      <button className="mt-3 px-4 py-2 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900 transition-all duration-300 flex items-center gap-2">
-        <Info className="w-5 h-5" /> More Info
+      <h3 className="text-lg font-bold mt-4">{name}</h3>
+      <p className="text-gray-600 text-sm mb-4">{description}</p>
+      <button className="mt-3 px-5 py-2 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition-all duration-300 flex items-center justify-center gap-2">
+        <Info className="w-5 h-5" /> View Details
       </button>
     </motion.div>
   );
 };
+
 
 const FeaturesSection = () => (
   <div className="py-12 text-center">
