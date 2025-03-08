@@ -4,6 +4,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/mrtoner.pk/',
+  base: '/',
 
 })
