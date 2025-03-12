@@ -4,6 +4,7 @@ import ProductFAQ from "../Components/product/ProductFAQ";
 import ProductReviews from "../Components/product/ProductReviews";
 import ProductAccessories from "../Components/product/ProductAccessories";
 import ProductGallery from "../Components/product/ProductGallery";
+import backgroundImage from "../images/15381.jpg";
 
 
 const printers = [
@@ -163,12 +164,24 @@ export default function PrinterList() {
   return (
     <>
       <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex  flex-col items-center justify-center h-80 p-25 text-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        <h1 className="relative text-6xl font-extrabold text-white">Printer Catalog</h1>
+
+      </motion.div>
+
+
+
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="p-6 max-w-6xl mx-auto"
       >
-        <h1 className="text-3xl font-bold mb-6 text-center">Printer Catalog</h1>
         <div className="flex justify-center mb-6">
           <motion.input
             initial={{ opacity: 0 }}
@@ -181,7 +194,7 @@ export default function PrinterList() {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -189,8 +202,8 @@ export default function PrinterList() {
         >
           {filteredPrinters.length > 0 ? (
             filteredPrinters.map((printer) => (
-              <motion.div 
-                key={printer.id} 
+              <motion.div
+                key={printer.id}
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 whileHover={{ scale: 1.05 }}
