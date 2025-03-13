@@ -85,6 +85,9 @@ const Navbar = () => {
 
                         <li><NavLink to="/contact" className="block py-2 hover:text-gray-400">Contact</NavLink></li>
                         <li><NavLink to="/about" className="block py-2 hover:text-gray-400">About Us</NavLink></li>
+                        <li><NavLink to="/blog" className="block py-2 hover:text-gray-400">Blog</NavLink></li>
+
+
                     </ul>
 
                     <div className="ml-6"><SearchComponent /></div>

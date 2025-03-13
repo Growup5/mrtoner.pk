@@ -10,6 +10,7 @@ import Toner from "./Components/Services/Toner";
 import Repair from "./Components/Services/RepairServices";
 import Footer from "./Components/Footer/footer";
 import BackToTop from "./Components/Footer/BackToTop";
+import Blog from "./Pages/BlogPost";
 import { Link } from "react-router-dom";
 
 function NotFound() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/services/repair" element={<Repair />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
