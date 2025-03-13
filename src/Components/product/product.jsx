@@ -1,15 +1,21 @@
 import React from "react";
 import { Printer, Info, Star } from "lucide-react";
 import { motion } from "framer-motion";
-import image1 from "../../images/p.webp";
+import image1 from "../../images/hero-810x475_229391675935519.webp";
+import image2 from "../../images/CanonIRc35203530.png";
+import image3 from "../../images/RicohAficioMPC65016502.png";
+import image4 from "../../images/hp_laserjet_pro_m15w_myshop_pk_05.jpg"
+import image5 from "../../images/hp_laserjet_pro_printer_m428fdw_myshop_pk_3.jpg";
+import image6 from "../../images/hp_myshop-pk-1_34.jpg";
+
 
 const photocopiers = [
-  { name: "Canon IR 2206n Photocopier", description: "Brand New, Canon, Photocopier", image: image1 },
-  { name: "Canon IR c3520/3530 Photocopier", description: "Canon, Photocopier", image: "your-image-url" },
-  { name: "Ricoh Aficio MPC 6501/6502 Photocopier", description: "Ricoh Aficio, Photocopier", image: "your-image-url" },
-  { name: "Canon IR 3300 Photocopier", description: "Canon, Photocopier", image: "your-image-url" },
-  { name: "Canon IR 2525 Photocopier", description: "Canon, Photocopier", image: "your-image-url" },
-  { name: "Ricoh MP C2003 Photocopier", description: "Refurbished, Brands, Ricoh Aficio, Photocopier", image: "your-image-url" },
+  { name: "Canon IR 2206n ", description: "Brand New, Canon Printer", image: image1 },
+  { name: "Canon IR c3520/3530 ", description: "Canon Printer", image: image2 },
+  { name: "Ricoh Aficio MPC 6501/6502 ", description: "Ricoh Aficio, Photocopier", image: image3 },
+  { name: "hp laser jet Pro M15w.", description: "Hp, Printer", image: image4 },
+  { name: "hp laser jet Pro printer m428fdw", description: "Hp, Printer", image: image5 },
+  { name: "HP LaserJet Enterprise M507dn", description: "Refurbished, Brands, Ricoh Aficio, Photocopier", image: image6 },
 ];
 
 const PhotocopierCard = ({ name, description, image }) => {
@@ -25,7 +31,7 @@ const PhotocopierCard = ({ name, description, image }) => {
         <motion.img 
           src={image} 
           alt={name} 
-          className="w-50 h-50 object-cover mx-auto group-hover:scale-110 transition-transform duration-300 rounded-3xl"
+          className="w-[200px] h-[200px] object-cover mx-auto group-hover:scale-110 transition-transform duration-300"
           />
       </div>
       <h3 className="text-lg font-bold mt-4">{name}</h3>
