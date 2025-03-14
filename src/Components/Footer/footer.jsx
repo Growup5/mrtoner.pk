@@ -33,7 +33,10 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-white">Contact Info</h3>
             <ul className="space-y-3">
               <li>Lahore, Pakistan</li>
-              <li>✉ mrtoner@gmail.com </li>
+              <li>✉ info@mrtoner.pk </li>
+              <li>✉ support@mrtoner.pk</li>
+
+
               <li>📞 +92 33-048-9839</li>
               <li>📞 +92 300-460-1659</li>
             </ul>
