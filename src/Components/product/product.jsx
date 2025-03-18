@@ -1,74 +1,78 @@
 import React from "react";
 import { Printer, Info, Star } from "lucide-react";
 import { motion } from "framer-motion";
-// import image1 from "../../images/hero-810x475_229391675935519.webp";
-// import image2 from "../../images/CanonIRc35203530.png";
-// import image3 from "../../images/RicohAficioMPC65016502.png";
-// import image4 from "../../images/hp_laserjet_pro_m15w_myshop_pk_05.jpg"
-// import image5 from "../../images/hp_laserjet_pro_printer_m428fdw_myshop_pk_3.jpg";
-// import image6 from "../../images/hp_myshop-pk-1_34.jpg";
+import Image1 from "../../images/18464.jpg"
 
 
-const photocopiers = [
-  { name: "Canon IR 2206n ", description: "Brand New, Canon Printer", image:""  },
-  { name: "Canon IR c3520/3530 ", description: "Canon Printer", image:""  },
-  { name: "Ricoh Aficio MPC 6501/6502 ", description: "Ricoh Aficio, Photocopier", image: "" },
-  { name: "hp laser jet Pro M15w.", description: "Hp, Printer", image: "" },
-  { name: "hp laser jet Pro printer m428fdw", description: "Hp, Printer", image: "" },
-  { name: "HP LaserJet Enterprise M507dn", description: "Refurbished, Brands, Ricoh Aficio, Photocopier", image: "" },
+const images = [
+  "src/images/18464.jpg",
+  "https://example.com/banner-image2.jpg",
+  "https://example.com/banner-image3.jpg"
 ];
 
-
-const PhotocopierCard = ({ name, description, image }) => {
+const AnimatedBanner = () => {
   return (
     <motion.div 
-      className="bg-white shadow-lg p-6 rounded-xl text-center transition-all duration-300 relative overflow-hidden group"
-      whileHover={{ scale: 1.05 }}
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      className="relative w-full h-[500px] flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <div className="relative w-full h-44 overflow-hidden rounded-lg">
-        <motion.img 
-          src={image} 
-          alt={name} 
-          className="w-[200px] h-[200px] object-cover mx-auto group-hover:scale-110 transition-transform duration-300"
+      <motion.h1 
+        className="text-5xl font-bold drop-shadow-lg"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        Advanced Printing Solutions
+      </motion.h1>
+      <motion.p 
+        className="text-lg mt-4"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        High-quality, fast, and reliable printers for your business.
+      </motion.p>
+      <div className="absolute right-10 bottom-0 flex gap-4">
+        {images.map((img, index) => (
+          <motion.img 
+            key={index}
+            src={img} 
+            alt={`Advanced Printer ${index + 1}`}
+            className="w-[200px] h-auto rounded-lg shadow-lg"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 + index * 0.3 }}
           />
+        ))}
       </div>
-      <h3 className="text-lg font-bold mt-4">{name}</h3>
-      <p className="text-gray-600 text-sm mb-4">{description}</p>
-      <button className="mt-3 px-5 py-2 bg-gray-600 text-white rounded-lg shadow-md hover:bg-gray-700 transition-all duration-300 flex items-center justify-center gap-2">
-        <Info className="w-5 h-5" /> View Details
-      </button>
     </motion.div>
   );
 };
 
 
 const FeaturesSection = () => (
+  <>
+  <AnimatedBanner/>
   <div className="py-12 text-center">
     <h2 className="text-3xl font-bold mb-6">Why Choose Our Photocopiers?</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div className="p-6 shadow-lg rounded-lg bg-white">
-        <Star className="w-10 h-10 mx-auto text-yellow-500" />
-        <h3 className="text-lg font-bold mt-4">High Performance</h3>
-        <p className="text-gray-600 text-sm">Fast and reliable photocopying solutions.</p>
-      </div>
-      <div className="p-6 shadow-lg rounded-lg bg-white">
-        <Star className="w-10 h-10 mx-auto text-yellow-500" />
-        <h3 className="text-lg font-bold mt-4">Affordable Pricing</h3>
-        <p className="text-gray-600 text-sm">Best value for high-end photocopiers.</p>
-      </div>
-      <div className="p-6 shadow-lg rounded-lg bg-white">
-        <Star className="w-10 h-10 mx-auto text-yellow-500" />
-        <h3 className="text-lg font-bold mt-4">Energy Efficient</h3>
-        <p className="text-gray-600 text-sm">Save power while maintaining quality.</p>
-      </div>
+      {["High Performance", "Affordable Pricing", "Energy Efficient"].map((feature, index) => (
+        <div key={index} className="p-6 shadow-lg rounded-lg bg-white">
+          <Star className="w-10 h-10 mx-auto text-yellow-500" />
+          <h3 className="text-lg font-bold mt-4">{feature}</h3>
+          <p className="text-gray-600 text-sm">
+            {feature === "High Performance" && "Fast and reliable photocopying solutions."}
+            {feature === "Affordable Pricing" && "Best value for high-end photocopiers."}
+            {feature === "Energy Efficient" && "Save power while maintaining quality."}
+          </p>
+        </div>
+      ))}
     </div>
   </div>
+  </>
 );
-
-
 
 const PhotocopierList = () => {
   return (
@@ -80,22 +84,9 @@ const PhotocopierList = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="text-4xl font-bold flex justify-center items-center gap-2">
-          <Printer className="w-8 h-8" /> Photocopier
+          <Printer className="w-8 h-8" /> HP LaserJet Printer
         </h1>
-        <p className="mt-2">RICOH | CANON | TOSHIBA | XEROX</p>
-      </motion.div>
-      <motion.div 
-        className="grid grid-cols-1 md:grid-cols-3 gap-6"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-        }}
-      >
-        {photocopiers.map((item, index) => (
-          <PhotocopierCard key={index} {...item} />
-        ))}
+        <p className="mt-2">HP | CANON | XEROX</p>
       </motion.div>
       <FeaturesSection />
     </div>

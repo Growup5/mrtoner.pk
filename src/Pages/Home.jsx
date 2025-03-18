@@ -49,7 +49,6 @@ const Home = () => {
         className="flex flex-col items-center justify-center h-full p-25 text-center bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        {/* Animated Heading with Slide-In */}
         <motion.h1
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -95,7 +94,6 @@ const Home = () => {
         </motion.div>
       </motion.div>
 
-      {/* Other Components with Fade-In Animations */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -16,6 +16,11 @@ import Image7 from "../images/laser.webp"
 import Image8 from "../images/HP LaserJet Pro 400.webp"
 import Image9 from "../images/HP LaserJet Pro 401.jpeg"
 import Image10 from "../images/HP LaserJet Pro 402.jpg"
+import Image11 from "../images/HP LaserJet Pro 404.jpg"
+import Image12 from "../images/HP LaserJet P3015.avif"
+import Image13 from "../images/c04592795.webp"
+import Image14 from "../images/HP LaserJet P1012.jpg"
+import Image15 from "../images/HP LaserJet 1022.webp"
 
 const printers = [
   {
@@ -142,7 +147,7 @@ const printers = [
     id: 16,
     name: "HP LaserJet Pro 404",
     description: "Reliable and efficient printing for business needs.",
-    image: "Image12",
+    image: [Image11],
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20404",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20404"
   },
@@ -150,7 +155,7 @@ const printers = [
     id: 17,
     name: "HP LaserJet P3015",
     description: "Fast and secure printing for high-demand environments.",
-    image: "Image13",
+    image: [Image12],
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P3015",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P3015"
   },
@@ -158,7 +163,23 @@ const printers = [
     id: 18,
     name: "HP LaserJet 605",
     description: "Enterprise-grade printer with superior speed and quality.",
-    image: "Image14",
+    image: [Image13],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
+  },
+  {
+    id: 18,
+    name: "HP LaserJet P1012",
+    description: "The HP LaserJet P1012 is a compact monochrome laser printer designed for personal and small office use.",
+    image: [Image14],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
+  },
+  {
+    id: 18,
+    name: "HP LaserJet P1022",
+    description: "The HP LaserJet P1012 is a compact monochrome laser printer designed for personal and small office use.",
+    image: [Image15],
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
   }
