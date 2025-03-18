@@ -1,22 +1,23 @@
 import React from "react";
 import { Printer, Info, Star } from "lucide-react";
 import { motion } from "framer-motion";
-import image1 from "../../images/hero-810x475_229391675935519.webp";
-import image2 from "../../images/CanonIRc35203530.png";
-import image3 from "../../images/RicohAficioMPC65016502.png";
-import image4 from "../../images/hp_laserjet_pro_m15w_myshop_pk_05.jpg"
-import image5 from "../../images/hp_laserjet_pro_printer_m428fdw_myshop_pk_3.jpg";
-import image6 from "../../images/hp_myshop-pk-1_34.jpg";
+// import image1 from "../../images/hero-810x475_229391675935519.webp";
+// import image2 from "../../images/CanonIRc35203530.png";
+// import image3 from "../../images/RicohAficioMPC65016502.png";
+// import image4 from "../../images/hp_laserjet_pro_m15w_myshop_pk_05.jpg"
+// import image5 from "../../images/hp_laserjet_pro_printer_m428fdw_myshop_pk_3.jpg";
+// import image6 from "../../images/hp_myshop-pk-1_34.jpg";
 
 
 const photocopiers = [
-  { name: "Canon IR 2206n ", description: "Brand New, Canon Printer", image: image1 },
-  { name: "Canon IR c3520/3530 ", description: "Canon Printer", image: image2 },
-  { name: "Ricoh Aficio MPC 6501/6502 ", description: "Ricoh Aficio, Photocopier", image: image3 },
-  { name: "hp laser jet Pro M15w.", description: "Hp, Printer", image: image4 },
-  { name: "hp laser jet Pro printer m428fdw", description: "Hp, Printer", image: image5 },
-  { name: "HP LaserJet Enterprise M507dn", description: "Refurbished, Brands, Ricoh Aficio, Photocopier", image: image6 },
+  { name: "Canon IR 2206n ", description: "Brand New, Canon Printer", image:""  },
+  { name: "Canon IR c3520/3530 ", description: "Canon Printer", image:""  },
+  { name: "Ricoh Aficio MPC 6501/6502 ", description: "Ricoh Aficio, Photocopier", image: "" },
+  { name: "hp laser jet Pro M15w.", description: "Hp, Printer", image: "" },
+  { name: "hp laser jet Pro printer m428fdw", description: "Hp, Printer", image: "" },
+  { name: "HP LaserJet Enterprise M507dn", description: "Refurbished, Brands, Ricoh Aficio, Photocopier", image: "" },
 ];
+
 
 const PhotocopierCard = ({ name, description, image }) => {
   return (

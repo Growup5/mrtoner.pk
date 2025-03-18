@@ -6,165 +6,165 @@ import ProductReviews from "../Components/product/ProductReviews";
 import ProductAccessories from "../Components/product/ProductAccessories";
 import ProductGallery from "../Components/product/ProductGallery";
 import backgroundImage from "../images/15381.jpg";
-import image1 from "../images/W1A53A.png";
-import Image2 from "../images/HP LaserJet MFP M141w Printer.png"
-import Image3 from "../images/HP LaserJet M111w Printer.png"
-import Image4 from "../images/HP LaserJet Pro 4003dn Printer (2Z609A).png"
-import Image5 from "../images/HP DeskJet 2320.png"
-import Image6 from "../images/HP Neverstop Laser MFP 1200a printer.png"
-import Image7 from "../images/Pantum P2200 Laser Printer (Grey).jpg"
-import Image8 from "../images/Pantum M6550nw Mono Laser Multifunction Printer.jpg"
-import Image9 from "../images/HP LaserJet Pro MFP M28w.png"
-import Image10 from "../images/HP LaserJet Pro M227fdn MFP Printer.png"
-import Image11 from "../images/HP Laser MFP 137fnw ww-en.png"
-import Image12 from "../images/HP Laser MFP 135a ww-en.png"
-import Image13 from "../images/HP LaserJet M404dn printe.png"
-import Image14 from "../images/HP LaserJet M111a monochrome Printer.png"
-import Image15 from "../images/HP LaserJet Enterprise Color M5525n Printer.webp" 
-import Image16 from "../images/HP Color LaserJet Pro M454dw Printer.jpg"
-import Image17 from "../images/HP 107w Wireless LaserJet Printer.png"
-
-
+import Image1 from "../images/hp.webp"
+import Image2 from "../images/hpaserjet1320.webp"
+import Image3 from "../images/c06196739.png"
+import Image4 from "../images/HP-1606.jpg"
+import Image5 from "../images/c02920299.webp"
+import Image6 from "../images/c03207877.webp"
+import Image7 from "../images/laser.webp"
+import Image8 from "../images/HP LaserJet Pro 400.webp"
+import Image9 from "../images/HP LaserJet Pro 401.jpeg"
+import Image10 from "../images/HP LaserJet Pro 402.jpg"
 
 const printers = [
   {
     id: 1,
-    name: "HP LaserJet MFP M135a Printer",
-    description: "A compact multifunction laser printer offering printing, scanning, and copying capabilities.",
-    image: [image1],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet 1005",
+    description: "Compact laser printer suitable for small offices.",
+    image: "https://tse4.mm.bing.net/th?id=OIP.2oVciBQSdbbBDFFoCJbWCgHaGI&pid=Api",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201005",
   },
   {
     id: 2,
-    name: "HP LaserJet MFP M141w Printer",
-    description: "Wireless multifunction laser printer with efficient performance and mobile printing support.",
-    image: [Image2],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet 1006",
+    description: "Energy-efficient laser printer with fast first-page-out.",
+    image: "https://tse3.mm.bing.net/th?id=OIP.za7rRBrn33xlH4KVHKsDkQHaFj&pid=Api",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201006",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201006",
+  },
+  {
+    id: 3,
+    name: "HP LaserJet 1020",
+    description: "Reliable and affordable monochrome laser printer.",
+    image: "https://tse3.mm.bing.net/th?id=OIP.t_uUUI6zdsz5X-1IH1NJzQHaHa&pid=Api",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201020",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201020",
   },
   {
     id: 4,
-    name: "HP LaserJet M111w Printer",
-    description: "Compact monochrome laser printer with wireless connectivity, suitable for small spaces.",
-    image: [Image3],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 6,
-    name: "HP DeskJet 2320",
-    description: "Affordable all-in-one inkjet printer ideal for everyday home printing, scanning, and copying.",
-    image: {Image5},
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 13,
-    name: "HP 107w Wireless LaserJet Printer",
-    description: "Affordable wireless monochrome laser printer with easy mobile printing options.",
-    image: [Image17],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet P1102w",
+    description: "Wireless laser printer with compact design.",
+    image: "https://tse3.mm.bing.net/th?id=OIP.JnI_LkD_zIU-e6zdcbuDUwHaFj&pid=Api",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P1102w",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P1102w",
   },
   {
     id: 5,
-    name: "HP LaserJet Pro 4003dn Printer (2Z609A)",
-    description: "Professional-grade monochrome laser printer with duplex printing and network capabilities.",
-    image: {Image4},
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet Pro 400 M401",
+    description: "Professional-grade monochrome laser printer.",
+    image: [Image1],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20400%20M401",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20400%20M401",
+  },
+  {
+    id: 6,
+    name: "HP LaserJet 1320",
+    description: "Compact duplex laser printer for small businesses.",
+    image: [Image2],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201320",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201320",
+  },
+  {
+    id: 7,
+    name: "HP LaserJet P2035",
+    description: "Fast and reliable monochrome laser printer.",
+    image: [Image3],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2035",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2035",
+  },
+  {
+    id: 8,
+    name: "HP LaserJet Pro MFP 1606dn",
+    description: "Multifunction printer with network connectivity.",
+    image: [Image4],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20MFP%201606dn",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20MFP%201606dn",
+  },
+  {
+    id: 9,
+    name: "HP LaserJet 1320",
+    description: "Compact monochrome laser printer for office use.",
+    image: [Image5],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201320",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201320"
+  },
+  {
+    id: 10,
+    name: "HP LaserJet P2015",
+    description: "High-speed laser printer with reliable performance.",
+    image: [Image6],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2015",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2015"
+  },
+  {
+    id: 11,
+    name: "HP LaserJet P2035",
+    description: "Fast monochrome printer for business needs.",
+    image: [Image3],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2035",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2035"
+  },
+  {
+    id: 12,
+    name: "HP LaserJet P2055",
+    description: "Efficient laser printer for high-volume printing.",
+    image: [Image7],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2055",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2055"
+  },
+  {
+    id: 13,
+    name: "HP LaserJet Pro 400",
+    description: "Reliable monochrome laser printer for small offices.",
+    image: [Image8],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20400",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20400"
   },
   {
     id: 14,
-    name: "HP Color LaserJet Pro M454dw Printer",
-    description: "High-quality color laser printer with duplex printing and wireless connectivity.",
-    image: [Image16],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet Pro 401",
+    description: "Compact and fast laser printer with network support.",
+    image: [Image9],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20401",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20401"
   },
   {
     id: 15,
-    name: "HP LaserJet Enterprise Color M5525n Printer",
-    description: "Enterprise-level color laser printer designed for high-volume printing with advanced features.",
-    image: [Image15],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet Pro 402",
+    description: "High-performance printer with fast output speed.",
+    image: [Image10],
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20402",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20402"
   },
   {
     id: 16,
-    name: "HP LaserJet M111a monochrome Printer",
-    description: "Entry-level monochrome laser printer offering reliable performance for everyday printing needs.",
-    image: [Image14],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet Pro 404",
+    description: "Reliable and efficient printing for business needs.",
+    image: "Image12",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20404",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20404"
   },
   {
     id: 17,
-    name: "HP LaserJet M404dn printer",
-    description: "Reliable monochrome laser printer with duplex printing and strong security features.",
-    image: [Image13],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
+    name: "HP LaserJet P3015",
+    description: "Fast and secure printing for high-demand environments.",
+    image: "Image13",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P3015",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P3015"
   },
   {
     id: 18,
-    name: "HP Laser MFP 135a ww-en",
-    description: "Compact multifunction laser printer offering printing, scanning, and copying capabilities.",
-    image: [Image12],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 19,
-    name: "HP Laser MFP 137fnw ww-en",
-    description: "Multifunction laser printer with fax, network, and wireless capabilities for versatile use.",
-    image: [Image11],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 20,
-    name: "HP LaserJet Pro M227fdn MFP Printer",
-    description: "Multifunction monochrome laser printer with duplex printing, scanning, copying, and faxing.",
-    image: [Image10],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 21,
-    name: "HP LaserJet Pro MFP M28w",
-    description: "Compact multifunction laser printer with wireless connectivity for home and small office use.",
-    image: [Image9],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 22,
-    name: "Pantum M6550nw Mono Laser Multifunction Printer",
-    description: "Monochrome laser printer with wireless connectivity, offering printing, scanning, copying, and faxing.",
-    image: [Image8],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 23,
-    name: "Pantum P2200 Laser Printer (Grey)",
-    description: "Affordable monochrome laser printer with fast printing speeds and compact design.",
-    image: [Image7],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-  {
-    id: 24,
-    name: "HP Neverstop Laser MFP 1200a printer",
-    description: "Innovative laser printer with refillable toner system, offering cost-effective printing.",
-    image: [Image6],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20MFP%20M135a%20Printer",
-    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20MFP%20M135a%20Printer",
-  },
-
+    name: "HP LaserJet 605",
+    description: "Enterprise-grade printer with superior speed and quality.",
+    image: "Image14",
+    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
+  }
 ];
+
+
 
 export default function PrinterList() {
   const [search, setSearch] = useState("");
@@ -198,8 +198,8 @@ export default function PrinterList() {
         <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredPrinters.length > 0 ? (
             filteredPrinters.map((printer) => (
-              <motion.div 
-                key={printer.id} 
+              <motion.div
+                key={printer.id}
                 className="border p-5 rounded-lg shadow-lg bg-white flex flex-col items-center text-center"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -214,7 +214,7 @@ export default function PrinterList() {
                     href={printer.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition-colors"
+                    className="bg-gray-500 text-white p-3 rounded-full hover:bg-green-600 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
@@ -222,7 +222,7 @@ export default function PrinterList() {
                   </motion.a>
                   <motion.a
                     href={printer.email}
-                    className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors"
+                    className="bg-gray-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >

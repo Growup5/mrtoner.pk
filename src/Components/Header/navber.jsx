@@ -68,15 +68,7 @@ const Navbar = () => {
                                         </li>
 
                                         <li className="px-4 py-3 hover:bg-gray-700 transition duration-300">
-                                            <Link to="/services/repair" className="flex items-center space-x-3">
-                                                <svg className="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 10l2-2m0 0l4-4m-4 4h-3l1 5h1l5 1h-7l1 1l4-6z" />
-                                                </svg>
-                                                <div>
-                                                    <p className="text-lg">Repair Services</p>
-                                                    <p className="text-sm text-gray-400">Fixing printers and toner-related issues</p>
-                                                </div>
-                                            </Link>
+                                       
                                         </li>
                                     </motion.ul>
                                 )}
@@ -135,7 +127,6 @@ const Navbar = () => {
                                         >
                                             <li><Link to="/services/printing" className="block px-4 py-3 hover:bg-gray-700">Printing</Link></li>
                                             <li><Link to="/services/toner-refill" className="block px-4 py-3 hover:bg-gray-700">Toner Refill</Link></li>
-                                            <li><Link to="/services/repair" className="block px-4 py-3 hover:bg-gray-700">Repair Services</Link></li>
                                         </motion.ul>
                                     )}
                                 </AnimatePresence>
