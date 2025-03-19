@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Images from "../images/15381.jpg"
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -17,18 +16,16 @@ const ContactPage = () => {
     setTimeout(() => setSubmitted(false), 5000);
   };
 
-  const backgroundImage = [Images]; 
-
   return (
     <div>
+      {/* Contact Us Banner */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-center h-80 p-6 text-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="flex flex-col items-center justify-center h-40 bg-gray-800 text-white text-center"
       >
-        <h1 className="relative text-6xl font-extrabold text-white">Contact Us</h1>
+        <h1 className="text-5xl font-extrabold">Contact Us</h1>
       </motion.div>
 
       <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
