@@ -1,11 +1,11 @@
 import React from "react";
-import { Printer, Info, Star } from "lucide-react";
+import { Printer, Info, Star, Images } from "lucide-react";
 import { motion } from "framer-motion";
 import Image1 from "../../images/18464.jpg"
 
 
 const images = [
-  "src/images/18464.jpg",
+  [Image1],
   "https://example.com/banner-image2.jpg",
   "https://example.com/banner-image3.jpg"
 ];

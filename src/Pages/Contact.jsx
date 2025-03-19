@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Images from "../images/15381.jpg"
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -16,7 +17,7 @@ const ContactPage = () => {
     setTimeout(() => setSubmitted(false), 5000);
   };
 
-  const backgroundImage = "src/images/15381.jpg"; 
+  const backgroundImage = [Images]; 
 
   return (
     <div>
