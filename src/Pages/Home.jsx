@@ -7,7 +7,6 @@ import ProductComparison from "../Components/Comparison/ProductComparison";
 import Blog from "../Components/Blog/Blog";
 import Newsletter from "../Components/Newsletter/Newsletter";
 import PrinterCustomizer from "../Components/Comparison/PrinterCustomizer";
-import PricingCalculator from "../Components/Comparison/PricingCalculator";
 import PrinterConfigurator from "../Components/Comparison/PrinterConfigurator";
 const Home = () => {
   const containerVariants = {
@@ -145,7 +144,6 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 1.0 }}
         viewport={{ once: true }}
       >
-        <PricingCalculator />
       </motion.div>
 
       <motion.div

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const AnimatedBanner = () => {
   return (
     <motion.div 
-      className="relative w-full h-[500px] flex flex-col items-center justify-center bg-gradient-to-r from-gray-600 to-purple-600 text-white overflow-hidden"
+      className="relative w-full h-[500px] flex flex-col items-center justify-center bg-gradient-to-r from-gray-600 to-purple-700 text-white overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

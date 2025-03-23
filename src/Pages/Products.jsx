@@ -27,6 +27,7 @@ const printers = [
     id: 1,
     name: "HP LaserJet 1005",
     description: "Compact laser printer suitable for small offices.",
+    price: "PKR 12,200",
     image: "https://tse4.mm.bing.net/th?id=OIP.2oVciBQSdbbBDFFoCJbWCgHaGI&pid=Api",
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201005",
@@ -36,6 +37,7 @@ const printers = [
     name: "HP LaserJet 1006",
     description: "Energy-efficient laser printer with fast first-page-out.",
     image: "https://tse3.mm.bing.net/th?id=OIP.za7rRBrn33xlH4KVHKsDkQHaFj&pid=Api",
+    price: "PKR 14,700",
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201006",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201006",
   },
@@ -171,6 +173,7 @@ const printers = [
     id: 18,
     name: "HP LaserJet P1012",
     description: "The HP LaserJet P1012 is a compact monochrome laser printer designed for personal and small office use.",
+    price: "PKR 12,200",
     image: [Image14],
     whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
@@ -184,7 +187,6 @@ const printers = [
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
   }
 ];
-
 
 
 export default function PrinterList() {
@@ -230,6 +232,7 @@ export default function PrinterList() {
                 <img src={printer.image} alt={printer.name} className="w-full h-48 object-cover mb-4 rounded-md" />
                 <h2 className="text-xl font-semibold mb-2">{printer.name}</h2>
                 <p className="text-gray-700 mb-3">{printer.description}</p>
+                <p className="text-lg font-bold text-green-600">Price: {printer.price}</p>
                 <div className="flex space-x-4 mt-3">
                   <motion.a
                     href={printer.whatsapp}

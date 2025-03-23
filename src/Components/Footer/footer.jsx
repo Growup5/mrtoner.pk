@@ -73,6 +73,8 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-gray-400 mt-4">&copy; {new Date().getFullYear()} PrinterStore. All rights reserved.</p>
+          <p className="text-gray-400 mt-4">&copy; {new Date().getFullYear()} I love you zobie .</p>
+
         </div>
       </div>
     </footer>
