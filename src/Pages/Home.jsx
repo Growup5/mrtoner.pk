@@ -3,11 +3,9 @@ import { motion } from "framer-motion";
 import { FaPrint, FaLeaf, FaTruck } from "react-icons/fa";
 import backgroundImage from "../images/15381.jpg";
 import PhotocopierList from "../Components/product/product";
-import ProductComparison from "../Components/Comparison/ProductComparison";
+import FAQSection from "../Components/Comparison/FAQSection";
 import Blog from "../Components/Blog/Blog";
-import Newsletter from "../Components/Newsletter/Newsletter";
-import PrinterCustomizer from "../Components/Comparison/PrinterCustomizer";
-import PrinterConfigurator from "../Components/Comparison/PrinterConfigurator";
+import BannerTwo from "../Components/Comparison/BannerTwo";
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -108,7 +106,7 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <ProductComparison />
+        <FAQSection />
       </motion.div>
 
       <motion.div
@@ -126,7 +124,6 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 0.6 }}
         viewport={{ once: true }}
       >
-        <Newsletter />
       </motion.div>
 
       <motion.div
@@ -135,7 +132,7 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 0.8 }}
         viewport={{ once: true }}
       >
-        <PrinterCustomizer />
+        {/* <FAQSection /> */}
       </motion.div>
 
       <motion.div
@@ -152,11 +149,11 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 1.2 }}
         viewport={{ once: true }}
       >
-        <PrinterConfigurator />
+        <BannerTwo />
       </motion.div>
 
     </>
-  );
+  )
 };
 
 export default Home;

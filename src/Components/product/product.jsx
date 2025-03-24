@@ -1,38 +1,54 @@
 import React from "react";
 import { Printer, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import Image1 from "../../images/18464.jpg"
 
-const AnimatedBanner = () => {
+export function Banner() {
   return (
-    <motion.div 
-      className="relative w-full h-[500px] flex flex-col items-center justify-center bg-gradient-to-r from-gray-600 to-purple-700 text-white overflow-hidden"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <motion.h1 
-        className="text-5xl font-bold drop-shadow-lg"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
+    <div className="relative w-full h-[500px] bg-gray-900 text-white flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img 
+          src={Image1}
+          alt="Printers" 
+          className="w-full h-full object-cover opacity-30"
+        />
+      </div>
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 1 }} 
+        className="relative z-10 text-center max-w-3xl px-6"
       >
-        Advanced Printing Solutions
-      </motion.h1>
-      <motion.p 
-        className="text-lg mt-4 text-center max-w-2xl"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        Explore cutting-edge printing technology designed to enhance productivity, reduce costs, and deliver high-quality results for businesses of all sizes.
-      </motion.p>
-    </motion.div>
+        <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
+          Premium Printers for Every Need
+        </h1>
+        <p className="text-lg mb-6 drop-shadow-md">
+          Discover high-performance printers with cutting-edge technology. Perfect for home and office use.
+        </p>
+        <div className="flex justify-center gap-4">
+          <motion.button 
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.95 }} 
+            className="bg-gray-500 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform"
+          >
+            Contact Now
+          </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.95 }} 
+            className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform"
+          >
+            Learn More
+          </motion.button>
+        </div>
+      </motion.div>
+    </div>
   );
-};
+}
 
 const FeaturesSection = () => (
   <>
-    <AnimatedBanner />
+    <Banner />
     <div className="py-12 text-center">
       <h2 className="text-3xl font-bold mb-6">Why Choose Our Printer?</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

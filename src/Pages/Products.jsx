@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { CheckCircle, PackageCheck, Truck } from "lucide-react";
-import ProductFAQ from "../Components/product/ProductFAQ";
+import FAQSection from "../Components/Comparison/FAQSection";
 import ProductReviews from "../Components/product/ProductReviews";
 // import ProductAccessories from "../Components/product/ProductAccessories";
 // import ProductGallery from "../Components/product/ProductGallery";
@@ -331,7 +331,7 @@ export default function PrinterList() {
         </motion.div>
       </motion.div>
 
-      <ProductFAQ />
+      <FAQSection />
       <ProductReviews />
 
       {/* Coming Soon Sections */}
