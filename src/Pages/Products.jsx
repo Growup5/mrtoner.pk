@@ -32,7 +32,7 @@ const printers = [
     description: "Compact laser printer suitable for small offices.",
     price: "PKR 12,200",
     image: "https://tse4.mm.bing.net/th?id=OIP.2oVciBQSdbbBDFFoCJbWCgHaGI&pid=Api",
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
+    whatsapp: "https://wa.me/03000461659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201005",
   },
   {
