@@ -41,7 +41,7 @@ const printers = [
     description: "Energy-efficient laser printer with fast first-page-out.",
     image: "https://tse3.mm.bing.net/th?id=OIP.za7rRBrn33xlH4KVHKsDkQHaFj&pid=Api",
     price: "PKR 14,700",
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201006",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201006",
   },
   {
@@ -50,8 +50,7 @@ const printers = [
     description: "Reliable and affordable monochrome laser printer.",
     price: "PKR 12,200",
     image: "https://tse3.mm.bing.net/th?id=OIP.t_uUUI6zdsz5X-1IH1NJzQHaHa&pid=Api",
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201020",
-    
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",    
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201020",
   },
   {
@@ -60,7 +59,7 @@ const printers = [
     description: "Wireless laser printer with compact design.",
     price: "PKR 18,200",
     image: "https://tse3.mm.bing.net/th?id=OIP.JnI_LkD_zIU-e6zdcbuDUwHaFj&pid=Api",
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P1102w",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P1102w",
   },
   {
@@ -69,7 +68,7 @@ const printers = [
     description: "Professional-grade monochrome laser printer.",
     price: "PKR 19,200",
     image: [Image1],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20400%20M401",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20400%20M401",
   },
   {
@@ -78,7 +77,7 @@ const printers = [
     description: "Compact duplex laser printer for small businesses.",
     price: "PKR 15,200",
     image: [Image2],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201320",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201320",
   },
   {
@@ -87,7 +86,7 @@ const printers = [
     description: "Multifunction printer with network connectivity.",
     price: "PKR 18,200",
     image: [Image4],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20MFP%201606dn",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20MFP%201606dn",
   },
   {
@@ -96,7 +95,7 @@ const printers = [
     description: "Multifunction printer with network connectivity.",
     price: "PKR 19,000",
     image: [Image4],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20MFP%201606dn",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20MFP%201606dn",
   },
   {
@@ -105,7 +104,7 @@ const printers = [
     description: "Compact monochrome laser printer for office use.",
     price: "PKR 15,200",
     image: [Image5],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%201320",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201320"
   },
   {
@@ -114,7 +113,7 @@ const printers = [
     description: "High-speed laser printer with reliable performance.",
     price: "PKR 15,200",
     image: [Image6],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2015",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2015"
   },
   {
@@ -123,7 +122,7 @@ const printers = [
     description: "Fast monochrome printer for business needs.",
     price: "PKR 17,200",
     image: [Image3],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2035",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2035"
   },
   {
@@ -132,7 +131,7 @@ const printers = [
     description: "Efficient laser printer for high-volume printing.",
     price: "PKR 19,200",
     image: [Image7],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P2055",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2055"
   },
   {
@@ -140,7 +139,7 @@ const printers = [
     name: "HP LaserJet Pro 400",
     description: "Reliable monochrome laser printer for small offices.",
     image: [Image8],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20400",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20400"
   },
   {
@@ -149,7 +148,7 @@ const printers = [
     description: "Compact and fast laser printer with network support.",
     price: "PKR 23,200",
     image: [Image9],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20401",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20401"
   },
   {
@@ -158,7 +157,7 @@ const printers = [
     description: "High-performance printer with fast output speed.",
     price: "PKR 26,200",
     image: [Image10],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20402",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20402"
   },
   {
@@ -167,7 +166,7 @@ const printers = [
     description: "Reliable and efficient printing for business needs.",
     price: "PKR 26,200",
     image: [Image11],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20Pro%20404",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20404"
   },
   {
@@ -176,7 +175,7 @@ const printers = [
     description: "Fast and secure printing for high-demand environments.",
     price: "PKR 20,200",
     image: [Image12],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P3015",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P3015"
   },
   {
@@ -185,7 +184,7 @@ const printers = [
     description: "Enterprise-grade printer with superior speed and quality.",
     price: "PKR 36,200",
     image: [Image13],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
   },
   {
@@ -194,7 +193,7 @@ const printers = [
     description: "The HP LaserJet P1012 is a compact monochrome laser printer designed for personal and small office use.",
     price: "PKR 12,200",
     image: [Image14],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
   },
   {
@@ -203,7 +202,7 @@ const printers = [
     description: "The HP LaserJet P1012 is a compact monochrome laser printer designed for personal and small office use.",
     price: "PKR 14,700",
     image: [Image15],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20605",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20605"
   },
   {
@@ -212,7 +211,7 @@ const printers = [
     description: "Wireless and ethernet laser printer with compact design.",
     price: "PKR 19,200",
     image: "https://tse3.mm.bing.net/th?id=OIP.JnI_LkD_zIU-e6zdcbuDUwHaFj&pid=Api",
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P1102w",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P1102w",
   },
   {
@@ -221,7 +220,7 @@ const printers = [
     description: "HP 1505 Printer—the compact powerhouse designed to elevate your printing experience.",
     price: "PKR 14,700",
     image: [Image16],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P1102w",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P1102w",
   },
   {
@@ -230,7 +229,7 @@ const printers = [
     description: "The HP LaserJet 201dn is a fast, reliable monochrome laser printer with automatic duplex printing and network connectivity",
     price: "PKR 20,200",
     image: [Image17],
-    whatsapp: "https://wa.me/923000461659?text=I'm%20interested%20in%20HP%20LaserJet%20P1102w",
+    whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
     email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P1102w",
   },
 ];
