@@ -6,6 +6,7 @@ import PhotocopierList from "../Components/product/product";
 import FAQSection from "../Components/Comparison/FAQSection";
 import Blog from "../Components/Blog/Blog";
 import BannerTwo from "../Components/Comparison/BannerTwo";
+import AdvancedGallery from "../Components/product/scroll";
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -115,6 +116,7 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 0.4 }}
         viewport={{ once: true }}
       >
+      <AdvancedGallery />
         <Blog />
       </motion.div>
 
