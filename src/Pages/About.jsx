@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import backgroundImage from "../images/15381.jpg";
+import image from "../images/sharjeel.jpeg"
 
 
 // Animation variants for Framer Motion
@@ -79,15 +80,9 @@ const AboutPage = () => {
                   description: 'Sharjeel has over 20 years of experience in the printing industry and is passionate about innovation.',
                 },
                 {
-                  name: 'Jane Smith',
-                  role: 'Chief Technology Officer',
-                  image: 'https://via.placeholder.com/150',
-                  description: 'Jane leads our R&D team, driving the development of next-gen printing technologies.',
-                },
-                {
                   name: 'Sharjeel shahid',
                   role: 'Head of Operations & CO-Founder',
-                  image: 'https://via.placeholder.com/150',
+                  image: [image],
                   description: 'Shahid ensures our operations run smoothly and efficiently.',
                 },
               ].map((member, index) => (
