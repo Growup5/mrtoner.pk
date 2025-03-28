@@ -1,13 +1,41 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPrint, FaLeaf, FaTruck } from "react-icons/fa";
+import { FaPrint, FaLeaf, FaTruck, FaEnvelope, FaWhatsapp, FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import backgroundImage from "../images/15381.jpg";
 import PhotocopierList from "../Components/product/product";
 import FAQSection from "../Components/Comparison/FAQSection";
 import Blog from "../Components/Blog/Blog";
 import BannerTwo from "../Components/Comparison/BannerTwo";
 import AdvancedGallery from "../Components/product/scroll";
+
+// HP LaserJet Printer data
+const printerProducts = [
+  {
+    id: 1,
+    name: "HP LaserJet Pro M12w",
+    model: "M12w",
+    type: "Monochrome Laser Printer",
+    speed: "18 ppm",
+    features: "Wireless printing, Compact design, Mobile printing",
+    price: "₹12,000",
+    image: "https://www.hp.com/wcsstore/hpusstore/Treatment/mdps/Q3FY21_MTY/m12w-printer-1.png" // HP official image
+  },
+  {
+    id: 2,
+    name: "HP LaserJet Enterprise MFP M430",
+    model: "M430",
+    type: "Multifunction Color Laser Printer",
+    speed: "45 ppm",
+    features: "Print, scan, copy, fax, High-volume printing",
+    price: "₹45,000",
+    image: "https://www.hp.com/wcsstore/hpusstore/Treatment/mdps/q3fy22/m430-mfp-1.png" // HP official image
+  }
+];
+
 const Home = () => {
+  const navigate = useNavigate();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -38,8 +66,34 @@ const Home = () => {
     hover: { scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)" },
   };
 
+  const productCardVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5 }
+    },
+    hover: { 
+      y: -5,
+      boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+    }
+  };
+
+  const handleEmailClick = (productName) => {
+    window.location.href = `mailto:sales@mrtoner.com?subject=Inquiry about ${productName}&body=I'm interested in the ${productName}. Please provide more details.`;
+  };
+
+  const handleWhatsAppClick = (productName) => {
+    window.open(`https://wa.me/1234567890?text=I'm interested in the ${productName}. Please provide more details.`, '_blank');
+  };
+
+  const handleSeeAllClick = () => {
+    navigate("/products");
+  };
+
   return (
     <>
+      {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -56,17 +110,15 @@ const Home = () => {
           Welcome to Mr. Toner
         </motion.h1>
 
-        {/* Animated Subtext with Slide-In */}
         <motion.p
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ type: "tween", ease: "easeOut", duration: 0.8, delay: 0.4 }}
           className="relative text-xl text-white mt-4"
         >
-          Your one-stop shop for all printer needs.
+          Your trusted HP LaserJet printer specialist
         </motion.p>
 
-        {/* Grid Cards with Slide-Up and Hover Effects */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -74,9 +126,9 @@ const Home = () => {
           className="relative grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-6xl"
         >
           {[
-            { icon: <FaPrint size={40} className="text-gray-900" />, title: "High-Quality Printing", desc: "Experience premium printing with our advanced toner solutions." },
-            { icon: <FaLeaf size={40} className="text-green-600" />, title: "Eco-Friendly Toners", desc: "Sustainable and cost-effective toner options available." },
-            { icon: <FaTruck size={40} className="text-blue-600" />, title: "Fast & Reliable Delivery", desc: "Get your toner supplies delivered quickly and efficiently." }
+            { icon: <FaPrint size={40} className="text-gray-900" />, title: "Original HP Toners", desc: "Genuine HP toner cartridges for best performance" },
+            { icon: <FaLeaf size={40} className="text-green-600" />, title: "Cost-Effective", desc: "Affordable printing solutions for your business" },
+            { icon: <FaTruck size={40} className="text-blue-600" />, title: "Same Day Delivery", desc: "Get your printers delivered within 24 hours" }
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -92,6 +144,78 @@ const Home = () => {
         </motion.div>
       </motion.div>
 
+      {/* Featured HP Printers Section */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="py-16 bg-gray-50"
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-800">HP LaserJet Printers</h2>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleSeeAllClick}
+              className="flex items-center text-blue-600 font-semibold hover:text-blue-800 transition"
+            >
+              See All Printers <FaArrowRight className="ml-2" />
+            </motion.button>
+          </div>
+          
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            {printerProducts.map((product) => (
+              <motion.div
+                key={product.id}
+                variants={productCardVariants}
+                whileHover="hover"
+                className="bg-white rounded-lg overflow-hidden shadow-md"
+              >
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-64 object-contain p-4 bg-gray-100"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
+                  <p className="text-gray-600 mt-1">Model: {product.model}</p>
+                  <p className="text-gray-600">{product.type}</p>
+                  <p className="text-gray-700 mt-2"><span className="font-semibold">Speed:</span> {product.speed}</p>
+                  <p className="text-gray-700 mt-1"><span className="font-semibold">Features:</span> {product.features}</p>
+                  <p className="text-2xl font-bold text-blue-600 mt-3">{product.price}</p>
+                  
+                  <div className="mt-6 flex space-x-3">
+                    <button 
+                      onClick={() => handleEmailClick(product.name)}
+                      className="flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                    >
+                      <FaEnvelope className="mr-2" />
+                      Email Inquiry
+                    </button>
+                    <button 
+                      onClick={() => handleWhatsAppClick(product.name)}
+                      className="flex items-center justify-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                    >
+                      <FaWhatsapp className="mr-2" />
+                      WhatsApp
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.div>
+
+      {/* Existing Sections */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -116,33 +240,8 @@ const Home = () => {
         transition={{ duration: 0.8, delay: 0.4 }}
         viewport={{ once: true }}
       >
-      <AdvancedGallery />
+        <AdvancedGallery />
         <Blog />
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        viewport={{ once: true }}
-      >
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        viewport={{ once: true }}
-        >
-        {/* <FAQSection /> */}
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 1.0 }}
-        viewport={{ once: true }}
-      >
       </motion.div>
 
       <motion.div
@@ -150,10 +249,9 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.2 }}
         viewport={{ once: true }}
-        >
+      >
         <BannerTwo />
       </motion.div>
-
     </>
   )
 };
