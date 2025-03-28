@@ -23,7 +23,7 @@ const ContactPage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-center h-40 bg-gray-800 text-white text-center"
+        className="bg-gradient-to-r from-gray-800 to-blue-600 py-20 text-center text-white"
       >
         <h1 className="text-5xl font-extrabold">Contact Us</h1>
       </motion.div>
