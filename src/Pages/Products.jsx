@@ -6,7 +6,7 @@ import HpLaserMfpPrinters from "../Pages/product2"
 import FAQSection from "../Components/Comparison/FAQSection";
 import ProductReviews from "../Components/product/ProductReviews";
 import backgroundImage from "../images/15381.jpg";
-import Image1 from "../images/hp.webp"
+import Image1 from "../images/HP LaserJet 1005 Printer.png"
 import Image2 from "../images/hpaserjet1320.webp"
 import Image3 from "../images/c06196739.png"
 import Image4 from "../images/HP-1606.jpg"

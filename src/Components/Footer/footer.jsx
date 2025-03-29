@@ -37,7 +37,7 @@ const Footer = () => {
               <li>✉ support@mrtoner.pk</li>
 
 
-              <li>📞 +92 33-048-9839</li>
+              <li>📞 +92 333-048-9839</li>
               <li>📞 +92 300-460-1659</li>
             </ul>
           </div>
