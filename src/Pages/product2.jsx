@@ -2,12 +2,23 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaWhatsapp, FaEnvelope, FaRegStar, FaStar, FaPrint, FaWifi, FaCopy, FaFax } from "react-icons/fa";
 import { CheckCircle, PackageCheck, Truck, ChevronDown, ChevronUp, X } from "lucide-react";
-import Image1 from "../images/201.webp";
+import Image1 from "../images/HP LaserJet 15 36.png";
+import Image2 from "../images/HP LaserJet 127.webp"
+import Image3 from "../images/HP LaserJet 1212.webp"
+import Image4 from "../images/HP LaserJet 1132.png"
+import Image5 from "../images/HP LaserJet 2727.webp"
+import Image6 from "../images/HP LaserJet 3390.jpg"
+import Image7 from "../images/HP LaserJet 425.jpg"
+import Image8 from "../images/HP LaserJet 3052.jpg"
+import Image9 from "../images/HP LaserJet M1522nf Multifunction Printer.jpeg"
+import Image10 from "../images/HP LaserJet 225.jpg"
+import { i } from "framer-motion/client";
+
 
 const hpLaserMfpPrinters = [
     {
       id: 4,
-      name: "HP LaserJet 15 36",
+      name: "HP LaserJet Pro M1536dnf Multifunction Printer",
       description: "Compact all-in-one laser printer for small offices with basic scanning and copying functions.",
       features: [
         "Print/Scan/Copy",
@@ -25,13 +36,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 35,000",
       rating: 4.3,
-      image: [Image],
+      image: [Image1],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%2015%2036",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%2015%2036",
     },
     {
       id: 5,
-      name: "HP LaserJet 127",
+      name: "HP LaserJet Pro MFP M127 series",
       description: "Reliable monochrome all-in-one laser printer with scanning and copying capabilities.",
       features: [
         "Print/Scan/Copy",
@@ -49,13 +60,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 30,000",
       rating: 4.2,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m127fn/print-scan-copy-fax/HP-LaserJet-Pro-M127fn-front-view.png",
+      image: [Image2],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%20127",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20127",
     },
     {
       id: 6,
-      name: "HP LaserJet 1212",
+      name: "HP LaserJet Pro M1212nf Multifunction Printer",
       description: "Basic monochrome all-in-one laser printer for home and small office use.",
       features: [
         "Print/Scan/Copy",
@@ -73,13 +84,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 26,000",
       rating: 4.1,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m1212nf/print-scan-copy-fax/HP-LaserJet-Pro-M1212nf-front-view.png",
+      image: [Image3],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201212",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201212",
     },
     {
       id: 7,
-      name: "HP LaserJet 1132",
+      name: "HP LaserJet Pro M1132 Multifunction Printer series",
       description: "Compact monochrome all-in-one laser printer with basic scanning and copying functions.",
       features: [
         "Print/Scan/Copy",
@@ -97,13 +108,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 26,000",
       rating: 4.0,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m1136/print-scan-copy/HP-LaserJet-Pro-M1136-front-view.png",
+      image: [Image4],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201132",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201132",
     },
     {
       id: 8,
-      name: "HP LaserJet 2727",
+      name: "HP LaserJet M2727nf Multifunction Printer",
       description: "Monochrome all-in-one laser printer with wireless connectivity and automatic document feeder.",
       features: [
         "Print/Scan/Copy",
@@ -121,13 +132,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 32,000",
       rating: 4.4,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m227fdw/print-scan-copy-fax/HP-LaserJet-Pro-M227fdw-front-view.png",
+      image: [Image5],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%202727",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%202727",
     },
     {
       id: 9,
-      name: "HP LaserJet 3390",
+      name: "HP LaserJet 3390 All-in-One Printer",
       description: "Monochrome all-in-one laser printer with fax capability and automatic document feeder.",
       features: [
         "Print/Scan/Copy/Fax",
@@ -145,13 +156,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 32,000",
       rating: 4.3,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m329dw/print-scan-copy-fax/HP-LaserJet-Pro-M329dw-front-view.png",
+      image: [Image6],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%203390",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%203390",
     },
     {
       id: 10,
-      name: "HP LaserJet 425",
+      name: "HP LaserJet Pro 400 MFP M425dn",
       description: "High-performance monochrome all-in-one laser printer for medium-sized offices.",
       features: [
         "Print/Scan/Copy/Fax",
@@ -169,13 +180,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 45,000",
       rating: 4.6,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m425dn/print-scan-copy-fax/HP-LaserJet-Pro-M425dn-front-view.png",
+      image: [Image7],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%20425",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20425",
     },
     {
       id: 11,
-      name: "HP LaserJet 3052",
+      name: "HP Laser Multifunction MFC-3052",
       description: "Compact all-in-one laser printer with basic scanning and copying functions.",
       features: [
         "Print/Scan/Copy",
@@ -193,13 +204,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 25,000",
       rating: 4.0,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m3055/print-scan-copy/HP-LaserJet-Pro-M3055-front-view.png",
+      image: [Image8],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%203052",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%203052",
     },
     {
       id: 12,
-      name: "HP LaserJet 1522",
+      name: "HP LaserJet M1522nf Multifunction Printer",
       description: "Monochrome all-in-one laser printer with basic scanning and copying functions.",
       features: [
         "Print/Scan/Copy",
@@ -217,13 +228,13 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 25,000",
       rating: 4.1,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m1522nf/print-scan-copy-fax/HP-LaserJet-Pro-M1522nf-front-view.png",
+      image: [Image9],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201522",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%201522",
     },
     {
       id: 13,
-      name: "HP LaserJet 225",
+      name: "HP LaserJet Pro MFP M225dw",
       description: "Monochrome all-in-one laser printer with network connectivity and automatic document feeder.",
       features: [
         "Print/Scan/Copy",
@@ -241,7 +252,7 @@ const hpLaserMfpPrinters = [
       },
       price: "PKR 38,000",
       rating: 4.5,
-      image: "https://www.hp.com/content/dam/sites/worldwide/printers/laserjet/images/product/m225dn/print-scan-copy/HP-LaserJet-Pro-M225dn-front-view.png",
+      image: [Image10],
       whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%20225",
       email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20225",
     },

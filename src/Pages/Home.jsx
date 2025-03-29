@@ -7,30 +7,44 @@ import PhotocopierList from "../Components/product/product";
 import FAQSection from "../Components/Comparison/FAQSection";
 import Blog from "../Components/Blog/Blog";
 import BannerTwo from "../Components/Comparison/BannerTwo";
+import Image1 from "../images/hp.webp"
+import Image6 from "../images/c03207877.webp"
 import AdvancedGallery from "../Components/product/scroll";
 
 // HP LaserJet Printer data
 const printerProducts = [
-  {
-    id: 1,
-    name: "HP LaserJet Pro M12w",
-    model: "M12w",
-    type: "Monochrome Laser Printer",
-    speed: "18 ppm",
-    features: "Wireless printing, Compact design, Mobile printing",
-    price: "₹12,000",
-    image: "https://www.hp.com/wcsstore/hpusstore/Treatment/mdps/Q3FY21_MTY/m12w-printer-1.png" // HP official image
-  },
-  {
-    id: 2,
-    name: "HP LaserJet Enterprise MFP M430",
-    model: "M430",
-    type: "Multifunction Color Laser Printer",
-    speed: "45 ppm",
-    features: "Print, scan, copy, fax, High-volume printing",
-    price: "₹45,000",
-    image: "https://www.hp.com/wcsstore/hpusstore/Treatment/mdps/q3fy22/m430-mfp-1.png" // HP official image
-  }
+    {
+      id: 5,
+      name: "HP LaserJet Pro 400 M401",
+      description: "Professional-grade monochrome laser printer.",
+      features: [
+        "Print speed: Up to 35 ppm",
+        "Duplex printing standard",
+        "350-sheet input capacity",
+        "Ethernet and USB 2.0 connectivity",
+        "128MB memory standard"
+      ],
+      price: "PKR 19,200",
+      image: [Image1],
+      whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
+      email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20Pro%20400%20M401",
+    },
+    {
+      id: 10,
+      name: "HP LaserJet P2015",
+      description: "High-speed laser printer with reliable performance.",
+      features: [
+        "Print speed: Up to 27 ppm",
+        "32MB memory standard",
+        "250-sheet input tray",
+        "First page out in 8.5 seconds",
+        "USB 2.0 and Ethernet connectivity"
+      ],
+      price: "PKR 15,200",
+      image: [Image6],
+      whatsapp: "https://wa.me/923004601659?text=I'm%20interested%20in%20HP%20LaserJet%201005",
+      email: "mailto:info@mrtoner.pk?subject=Inquiry%20about%20HP%20LaserJet%20P2015"
+    }
 ];
 
 const Home = () => {
@@ -145,6 +159,17 @@ const Home = () => {
       </motion.div>
 
       {/* Featured HP Printers Section */}
+
+
+      {/* Existing Sections */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <PhotocopierList />
+      </motion.div>
       <motion.div 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -213,16 +238,6 @@ const Home = () => {
             ))}
           </motion.div>
         </div>
-      </motion.div>
-
-      {/* Existing Sections */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <PhotocopierList />
       </motion.div>
 
       <motion.div

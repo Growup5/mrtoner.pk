@@ -28,7 +28,7 @@ import Image17 from "../images/201.webp"
 const printers = [
     {
       id: 1,
-      name: "HP LaserJet 1005",
+      name: "HP LaserJet 1005 Printer",
       description: "Compact laser printer suitable for small offices.",
       features: [
         "Print speed: Up to 15 ppm (A4)",
@@ -44,7 +44,7 @@ const printers = [
     },
     {
       id: 2,
-      name: "HP LaserJet 1006",
+      name: "HP LaserJet 1006 Printer",
       description: "Energy-efficient laser printer with fast first-page-out.",
       features: [
         "Print speed: Up to 16 ppm (A4)",
@@ -60,7 +60,7 @@ const printers = [
     },
     {
       id: 3,
-      name: "HP LaserJet 1020",
+      name: "HP LaserJet 1020 Printer",
       description: "Reliable and affordable monochrome laser printer.",
       features: [
         "Print speed: Up to 14 ppm (A4)",
@@ -76,7 +76,7 @@ const printers = [
     },
     {
       id: 4,
-      name: "HP LaserJet P1102w",
+      name: "HP LaserJet P1102w Printer",
       description: "Wireless laser printer with compact design.",
       features: [
         "Wireless 802.11b/g/n connectivity",
@@ -92,7 +92,7 @@ const printers = [
     },
     {
       id: 5,
-      name: "HP LaserJet Pro 400 M401",
+      name: "HP LaserJet Pro 400 M401 Printer",
       description: "Professional-grade monochrome laser printer.",
       features: [
         "Print speed: Up to 35 ppm",
@@ -108,7 +108,7 @@ const printers = [
     },
     {
       id: 6,
-      name: "HP LaserJet 1320",
+      name: "HP LaserJet 1320 Printer",
       description: "Compact duplex laser printer for small businesses.",
       features: [
         "Print speed: Up to 22 ppm",
@@ -124,7 +124,7 @@ const printers = [
     },
     {
       id: 7,
-      name: "HP LaserJet Pro MFP 1606",
+      name: "HP LaserJet Pro MFP 1606 Printer",
       description: "Multifunction printer with network connectivity.",
       features: [
         "Print/scan/copy functions",
@@ -140,7 +140,7 @@ const printers = [
     },
     {
       id: 8,
-      name: "HP LaserJet Pro MFP 1606dn",
+      name: "HP LaserJet Pro MFP 1606dn Printer",
       description: "Multifunction printer with network connectivity.",
       features: [
         "Print/scan/copy functions",
@@ -156,7 +156,7 @@ const printers = [
     },
     {
       id: 9,
-      name: "HP LaserJet 1320",
+      name: "HP LaserJet 1320 Printer",
       description: "Compact monochrome laser printer for office use.",
       features: [
         "Print speed: Up to 22 ppm",
@@ -172,7 +172,7 @@ const printers = [
     },
     {
       id: 10,
-      name: "HP LaserJet P2015",
+      name: "HP LaserJet P2015 Printer",
       description: "High-speed laser printer with reliable performance.",
       features: [
         "Print speed: Up to 27 ppm",
@@ -188,7 +188,7 @@ const printers = [
     },
     {
       id: 11,
-      name: "HP LaserJet P2035",
+      name: "HP LaserJet P2035 Printer",
       description: "Fast monochrome printer for business needs.",
       features: [
         "Print speed: Up to 30 ppm",
@@ -204,7 +204,7 @@ const printers = [
     },
     {
       id: 12,
-      name: "HP LaserJet P2055",
+      name: "HP LaserJet P2055 Printer",
       description: "Efficient laser printer for high-volume printing.",
       features: [
         "Print speed: Up to 33 ppm",
@@ -220,7 +220,7 @@ const printers = [
     },
     {
       id: 13,
-      name: "HP LaserJet Pro 400",
+      name: "HP LaserJet Pro 400 Printer",
       description: "Reliable monochrome laser printer for small offices.",
       features: [
         "Print speed: Up to 35 ppm",
@@ -235,7 +235,7 @@ const printers = [
     },
     {
       id: 14,
-      name: "HP LaserJet Pro 401",
+      name: "HP LaserJet Pro 401 Printer",
       description: "Compact and fast laser printer with network support.",
       features: [
         "Print speed: Up to 40 ppm",
@@ -251,7 +251,7 @@ const printers = [
     },
     {
       id: 15,
-      name: "HP LaserJet Pro 402",
+      name: "HP LaserJet Pro 402 Printer",
       description: "High-performance printer with fast output speed.",
       features: [
         "Print speed: Up to 45 ppm",
@@ -267,7 +267,7 @@ const printers = [
     },
     {
       id: 16,
-      name: "HP LaserJet Pro 404",
+      name: "HP LaserJet Pro 404 Printer",
       description: "Reliable and efficient printing for business needs.",
       features: [
         "Print speed: Up to 50 ppm",
@@ -283,7 +283,7 @@ const printers = [
     },
     {
       id: 17,
-      name: "HP LaserJet P3015",
+      name: "HP LaserJet P3015 Printer",
       description: "Fast and secure printing for high-demand environments.",
       features: [
         "Print speed: Up to 47 ppm",
@@ -299,7 +299,7 @@ const printers = [
     },
     {
       id: 18,
-      name: "HP LaserJet 605",
+      name: "HP LaserJet 605 Printer",
       description: "Enterprise-grade printer with superior speed and quality.",
       features: [
         "Print speed: Up to 55 ppm",
@@ -315,7 +315,7 @@ const printers = [
     },
     {
       id: 19,
-      name: "HP LaserJet P1012",
+      name: "HP LaserJet P1012 Printer",
       description: "Compact monochrome laser printer for personal and small office use.",
       features: [
         "Print speed: Up to 15 ppm",
@@ -331,7 +331,7 @@ const printers = [
     },
     {
       id: 20,
-      name: "HP LaserJet P1022",
+      name: "HP LaserJet P1022 Printer",
       description: "Compact monochrome laser printer for personal and small office use.",
       features: [
         "Print speed: Up to 19 ppm",
@@ -347,7 +347,7 @@ const printers = [
     },
     {
       id: 21,
-      name: "HP LaserJet P1102we",
+      name: "HP LaserJet P1102we Printer",
       description: "Wireless and ethernet laser printer with compact design.",
       features: [
         "Wireless and Ethernet networking",
@@ -363,7 +363,7 @@ const printers = [
     },
     {
       id: 22,
-      name: "HP LaserJet P1505",
+      name: "HP LaserJet P1505 Printer",
       description: "HP 1505 Printer—the compact powerhouse designed to elevate your printing experience.",
       features: [
         "Print speed: Up to 23 ppm",
@@ -379,7 +379,7 @@ const printers = [
     },
     {
       id: 23,
-      name: "HP LaserJet 201dn",
+      name: "HP LaserJet 201dn Printer",
       description: "Fast, reliable monochrome laser printer with automatic duplex printing and network connectivity",
       features: [
         "Print speed: Up to 30 ppm",
