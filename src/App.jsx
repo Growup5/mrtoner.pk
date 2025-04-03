@@ -11,6 +11,8 @@ import Footer from "./Components/Footer/footer";
 import BackToTop from "./Components/Footer/BackToTop";
 import Blog from "./Pages/BlogPost";
 import { Link } from "react-router-dom";
+import CustomOrders from './Components/Services/CustomOrders';
+
 
 function NotFound() {
   return (
@@ -42,7 +44,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/service/custom-orders" element={<CustomOrders />} />        
         <Route path="*" element={<NotFound />} />
+
       </Routes>
       <Footer />
       <BackToTop />

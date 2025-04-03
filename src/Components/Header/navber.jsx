@@ -82,13 +82,13 @@ const Navbar = () => {
                                         </li>
 
                                         <li className="px-4 py-3 hover:bg-gray-700 transition duration-200">
-                                            <Link to="/services/toner-refill" className="flex items-center space-x-3">
+                                            <Link to="/service/custom-orders" className="flex items-center space-x-3">
                                                 <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2v12m0 0v8m0-8H6m6 0h6M3 9l9 9L21 9" />
                                                 </svg>
                                                 <div>
-                                                    <p className="text-white">Toner Refill</p>
-                                                    <p className="text-xs text-gray-400 mt-1">High-quality toner refills</p>
+                                                    <p className="text-white">Custom Orders </p>
+                                                    <p className="text-xs text-gray-400 mt-1">High-quality toner Bulk and Corporate Printing</p>
                                                 </div>
                                             </Link>
                                         </li>
@@ -212,11 +212,11 @@ const Navbar = () => {
                                             </li>
                                             <li>
                                                 <Link 
-                                                    to="/services/toner-refill" 
+                                                    to="/service/custom-orders" 
                                                     className="block py-3 px-4 hover:bg-gray-600 transition duration-200"
                                                     onClick={toggleMenu}
                                                 >
-                                                    Toner Refill
+                                                    Custom Orders
                                                 </Link>
                                             </li>
                                         </motion.ul>
