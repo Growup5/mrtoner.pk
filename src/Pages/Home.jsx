@@ -21,7 +21,6 @@ import Blog from "../Components/Blog/Blog";
 import BannerTwo from "../Components/Comparison/BannerTwo";
 import Image1 from "../images/hp.webp";
 import Image6 from "../images/c03207877.webp";
-import AdvancedGallery from "../Components/product/scroll";
 import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
@@ -311,6 +310,7 @@ const Home = () => {
         viewport={{ once: true }}
         className="py-16 bg-white"
       >
+        
         <PhotocopierList />
         
         <div className="container mx-auto px-4">
@@ -502,7 +502,6 @@ const Home = () => {
         viewport={{ once: true }}
         className="py-16 bg-gray-50"
       >
-        <AdvancedGallery />
       </motion.div>
 
       {/* Blog Section */}
