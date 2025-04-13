@@ -16,7 +16,7 @@ const Navbar = () => {
                     to="/" 
                     className="text-2xl font-bold hover:text-gray-400 transition duration-300 flex items-center"
                 >
-                    <span className="mr-1">Socho</span>
+                    <span className="mr-1">MrToner</span>
                 </Link>
 
                 <div className="hidden lg:flex lg:items-center space-x-8">

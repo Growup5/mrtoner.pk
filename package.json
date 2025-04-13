@@ -1,6 +1,9 @@
 {
-  "name": "socho.pk",
-  "homepage": "https://github.com/Growup5/socho.pk",
+  "name": "mrtoner.pk",
+  "homepage": "https://mrtoner.pk",
+  "description": "Mr. Toner - Your one-stop solution for all printing needs in Pakistan. We offer a wide range of printer cartridges, toners, and printing solutions to meet your requirements.",
+  "author": "Mr. Toner",
+  "license": "MIT",
   "private": true,
   "version": "0.0.0",
   "type": "module",
