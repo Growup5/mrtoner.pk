@@ -176,7 +176,7 @@ const Home = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/products")}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg"
+            className="bg-gray-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg"
           >
             Explore Printers
           </motion.button>

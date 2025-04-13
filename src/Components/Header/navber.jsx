@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdPrint } from 'react-icons/md'; 
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,18 +13,21 @@ const Navbar = () => {
     return (
         <nav className="bg-gray-900 text-white p-4 shadow-lg sticky top-0 z-50">
             <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-                <Link 
-                    to="/" 
+
+                <Link
+                    to="/"
                     className="text-2xl font-bold hover:text-gray-400 transition duration-300 flex items-center"
                 >
-                    <span className="mr-1">MrToner</span>
+                    <MdPrint className="mr-2 text-3xl" /> {/* Logo/icon */}
+                    <span>MrToner</span>
                 </Link>
+
 
                 <div className="hidden lg:flex lg:items-center space-x-8">
                     <ul className="flex flex-row space-x-8">
                         <li>
-                            <NavLink 
-                                to="/" 
+                            <NavLink
+                                to="/"
                                 className="block py-2 hover:text-gray-400 transition duration-200 relative"
                                 activeClassName="text-blue-400"
                             >
@@ -32,8 +36,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink 
-                                to="/products" 
+                            <NavLink
+                                to="/products"
                                 className="block py-2 hover:text-gray-400 transition duration-200"
                                 activeClassName="text-blue-400"
                             >
@@ -48,11 +52,11 @@ const Navbar = () => {
                         >
                             <button className="flex items-center py-2 hover:text-gray-400 transition duration-200">
                                 Services
-                                <svg 
-                                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} 
-                                    fill="none" 
-                                    stroke="currentColor" 
-                                    viewBox="0 0 24 24" 
+                                <svg
+                                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -97,8 +101,8 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <NavLink 
-                                to="/contact" 
+                            <NavLink
+                                to="/contact"
                                 className="block py-2 hover:text-gray-400 transition duration-200"
                                 activeClassName="text-blue-400"
                             >
@@ -106,8 +110,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink 
-                                to="/about" 
+                            <NavLink
+                                to="/about"
                                 className="block py-2 hover:text-gray-400 transition duration-200"
                                 activeClassName="text-blue-400"
                             >
@@ -115,8 +119,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink 
-                                to="/blog" 
+                            <NavLink
+                                to="/blog"
                                 className="block py-2 hover:text-gray-400 transition duration-200"
                                 activeClassName="text-blue-400"
                             >
@@ -126,16 +130,16 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <button 
-                    onClick={toggleMenu} 
+                <button
+                    onClick={toggleMenu}
                     className="lg:hidden focus:outline-none p-1 rounded-md hover:bg-gray-800 transition duration-200"
                     aria-label="Toggle menu"
                 >
-                    <svg 
-                        className="w-6 h-6" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24" 
+                    <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
@@ -154,8 +158,8 @@ const Navbar = () => {
                     >
                         <ul className="flex flex-col space-y-1 px-4 py-3">
                             <li>
-                                <NavLink 
-                                    to="/" 
+                                <NavLink
+                                    to="/"
                                     className="block py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200"
                                     activeClassName="text-blue-400"
                                     onClick={toggleMenu}
@@ -164,8 +168,8 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink 
-                                    to="/products" 
+                                <NavLink
+                                    to="/products"
                                     className="block py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200"
                                     activeClassName="text-blue-400"
                                     onClick={toggleMenu}
@@ -180,11 +184,11 @@ const Navbar = () => {
                                     className="flex items-center justify-between w-full py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200 text-left"
                                 >
                                     Services
-                                    <svg 
-                                        className={`w-4 h-4 transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`} 
-                                        fill="none" 
-                                        stroke="currentColor" 
-                                        viewBox="0 0 24 24" 
+                                    <svg
+                                        className={`w-4 h-4 transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -201,8 +205,8 @@ const Navbar = () => {
                                             className="bg-gray-700 rounded-md ml-4 overflow-hidden"
                                         >
                                             <li>
-                                                <Link 
-                                                    to="/services/printing" 
+                                                <Link
+                                                    to="/services/printing"
                                                     className="block py-3 px-4 hover:bg-gray-600 transition duration-200"
                                                     onClick={toggleMenu}
                                                 >
@@ -210,8 +214,8 @@ const Navbar = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link 
-                                                    to="/service/custom-orders" 
+                                                <Link
+                                                    to="/service/custom-orders"
                                                     className="block py-3 px-4 hover:bg-gray-600 transition duration-200"
                                                     onClick={toggleMenu}
                                                 >
@@ -224,8 +228,8 @@ const Navbar = () => {
                             </li>
 
                             <li>
-                                <NavLink 
-                                    to="/contact" 
+                                <NavLink
+                                    to="/contact"
                                     className="block py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200"
                                     activeClassName="text-blue-400"
                                     onClick={toggleMenu}
@@ -234,8 +238,8 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink 
-                                    to="/about" 
+                                <NavLink
+                                    to="/about"
                                     className="block py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200"
                                     activeClassName="text-blue-400"
                                     onClick={toggleMenu}
@@ -244,8 +248,8 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink 
-                                    to="/blog" 
+                                <NavLink
+                                    to="/blog"
                                     className="block py-3 px-2 hover:bg-gray-700 rounded-md transition duration-200"
                                     activeClassName="text-blue-400"
                                     onClick={toggleMenu}
